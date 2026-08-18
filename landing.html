@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkday · インクデイ — 私人日記 / A Private Journal</title>
+<meta name="description" content="A calm, private journal for iPhone, iPad, and Mac. One entry a day with photos, video, audio, moods and tags — synced through your own iCloud, with no servers and no subscription to write. 專屬 iPhone / iPad / Mac 的純淨私人日記，一日一篇，只存你自己的 iCloud，寫日記永遠免費。">
+<style>
+  :root{
+    --bg:#F3F1EA; --card:#FCFBF6; --border:#E3DFD2;
+    --deep:#1E2A3A; --accent:#2F5A8C; --muted:#83806F;
+    --hero-a:#EAF0F6; --hero-b:#D6E2EF; --hero-c:#C4D5E7;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14181E; --card:#1B212A; --border:#2B333F;
+           --deep:#E7ECF3; --accent:#7FA8D6; --muted:#93A0B2;
+           --hero-a:#1A2430; --hero-b:#162029; --hero-c:#121A22; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"PingFang TC","Hiragino Sans","Noto Sans TC",system-ui,sans-serif;
+       color:var(--deep);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header.hero{background:linear-gradient(160deg,var(--hero-a),var(--hero-b) 60%,var(--hero-c));
+              padding:72px 0 64px;text-align:center}
+  .brand{display:inline-flex;align-items:center;gap:14px;margin-bottom:6px}
+  .drop{width:44px;height:44px;border-radius:13px;background:var(--accent);position:relative;flex:none}
+  .drop::after{content:"";position:absolute;left:50%;top:46%;width:12px;height:12px;background:var(--hero-b);
+               border-radius:0 50% 50% 50%;transform:translate(-50%,-50%) rotate(45deg)}
+  .logo{font-size:2.6rem;font-weight:800;letter-spacing:.5px;color:var(--deep)}
+  .tag{font-size:1.15rem;color:var(--deep);margin:.4rem 0 1.6rem;opacity:.85}
+  .sub{max-width:600px;margin:0 auto;color:var(--deep);opacity:.9}
+  .cta{display:inline-block;margin-top:26px;background:var(--accent);color:#fff;
+       text-decoration:none;font-weight:700;padding:13px 26px;border-radius:999px}
+  .cta.secondary{background:transparent;color:var(--accent);border:1.5px solid var(--accent);margin-left:8px}
+  section{padding:56px 0}
+  h2{font-size:1.5rem;margin:0 0 28px;text-align:center}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px}
+  .card h3{margin:.2rem 0 .4rem;font-size:1.1rem}
+  .card p{margin:0;color:var(--muted);font-size:.96rem}
+  .en,.ja{display:block;margin-top:7px;font-size:.9rem;opacity:.85}
+  .ja{opacity:.8}
+  .emoji{font-size:1.6rem}
+  .pill{display:inline-block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+        color:var(--accent);border:1px solid var(--border);border-radius:999px;padding:2px 9px;margin-left:6px;vertical-align:middle}
+  footer{padding:40px 0 64px;text-align:center;color:var(--muted);font-size:.9rem}
+  footer a{margin:0 8px}
+  #changelog{background:#00000006}
+  @media (prefers-color-scheme: dark){ #changelog{background:#ffffff08} }
+  .vers{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+  .ver{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px}
+  .vhead{display:flex;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+  .vnum{font-weight:800;color:var(--accent);font-size:1.1rem}
+  .vdate{color:var(--muted);font-size:.85rem}
+  .ver p{margin:0;color:var(--muted);font-size:.96rem}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="drop" aria-hidden="true"></div>
+      <div class="logo">Inkday</div>
+    </div>
+    <div class="tag">把每一天寫下來・Write down every day・毎日を書き留める</div>
+    <p class="sub">專屬 iPhone、iPad 與 Mac 的純淨私人日記。一日一篇，寫下文字、照片、影片、錄音、心情與標籤，全部只存在<strong>你自己的 iCloud</strong>——沒有伺服器、沒有廣告，寫日記永遠免費。<span class="en">A calm, private journal for iPhone, iPad, and Mac. One entry a day with photos, video, audio, moods, and tags — kept in your own iCloud. No servers, no ads, and writing is always free.</span><span class="ja">iPhone・iPad・Mac のためのプライベートな日記。1日1ページに、文章・写真・動画・録音・気分・タグを記録。すべてあなた自身の iCloud にのみ保存され、サーバーも広告もなく、書くことはずっと無料です。</span></p>
+    <div>
+      <a class="cta" href="#features">看看功能 / See features / 機能を見る</a>
+      <a class="cta secondary" href="support.html">支援 / Support / サポート</a>
+      <a class="cta secondary" href="privacy-policy.html">隱私 / Privacy / プライバシー</a>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="wrap">
+    <h2>主要功能 / Features / 主な機能</h2>
+    <div class="grid">
+      <div class="card"><div class="emoji">📖</div><h3>一日一篇 · 月曆</h3><p>純粹的一日一篇，用月曆回顧與補寫任何一天。<span class="en">A clean one-entry-a-day rhythm, with a calendar to revisit or backfill any day.</span><span class="ja">シンプルな1日1ページ。カレンダーからどの日でも振り返り・追記できます。</span></p></div>
+      <div class="card"><div class="emoji">🔒</div><h3>純淨隱私</h3><p>沒有伺服器、沒有帳號、沒有廣告與追蹤。你的日記只有你看得到。<span class="en">No servers, no account, no ads or tracking. Your journal is for your eyes only.</span><span class="ja">サーバーもアカウントも広告もトラッキングもなし。日記を見られるのはあなただけです。</span></p></div>
+      <div class="card"><div class="emoji">☁️</div><h3>三平台 iCloud 同步<span class="pill">免費 Free</span></h3><p>iPhone、iPad、Mac 透過你自己的 iCloud 自動同步，這項核心永遠免費。<span class="en">iPhone, iPad, and Mac sync automatically through your own iCloud — this core is free forever.</span><span class="ja">iPhone・iPad・Mac がご自身の iCloud で自動同期。このコア機能はずっと無料です。</span></p></div>
+      <div class="card"><div class="emoji">📷</div><h3>照片 · 影片 · 錄音</h3><p>每篇日記都能附上多張照片、影片與語音備忘，留住當下。<span class="en">Add multiple photos, videos, and voice memos to any entry.</span><span class="ja">各ページに写真・動画・ボイスメモを複数追加できます。</span></p></div>
+      <div class="card"><div class="emoji">🏷️</div><h3>心情 · 標籤 · 全文搜尋</h3><p>用心情 emoji 與標籤整理，全文搜尋隨時找回任何一天。<span class="en">Organize with mood emojis and tags, and find any day with full-text search.</span><span class="ja">気分の絵文字とタグで整理し、全文検索でどの日もすぐに見つけられます。</span></p></div>
+      <div class="card"><div class="emoji">📍</div><h3>地點與天氣<span class="pill">Pro</span></h3><p>新增日記時記下所在地點，並補上當天天氣（由 Apple Weather 提供）。<span class="en">Tag where you were and capture that day's weather (powered by Apple Weather).</span><span class="ja">日記を書いた場所を記録し、その日の天気も残せます（Apple Weather 提供）。</span></p></div>
+      <div class="card"><div class="emoji">🗓️</div><h3>行事曆快照<span class="pill">Pro</span></h3><p>把當天的行事曆行程存成文字快照。就算日後換行事曆或換手機，也能從日記回看當天的安排。<span class="en">Save that day's calendar events as a text snapshot — look back on your plans even after switching calendars or phones.</span><span class="ja">その日の予定をテキストのスナップショットとして保存。カレンダーや端末を変えても振り返れます。</span></p></div>
+      <div class="card"><div class="emoji">🎨</div><h3>7 套主題 · 深色模式</h3><p>七套紙質配色，並支援跟隨系統的淺色／深色外觀。<span class="en">Seven paper-toned themes, with light and dark that can follow the system.</span><span class="ja">7種類の紙のような配色。システムに合わせたライト／ダークにも対応。</span></p></div>
+      <div class="card"><div class="emoji">📊</div><h3>統計<span class="pill">Pro</span></h3><p>連續書寫天數、心情與標籤排行，看見自己的日記軌跡。<span class="en">Writing streaks, mood and tag rankings — see your journaling patterns.</span><span class="ja">連続記録日数、気分やタグのランキングで、日記の傾向が見えます。</span></p></div>
+      <div class="card"><div class="emoji">🗺️</div><h3>回憶地圖<span class="pill">Pro</span></h3><p>把有地點的日記標在地圖上，重走走過的地方。<span class="en">See your located entries on a map and retrace where you've been.</span><span class="ja">場所付きの日記を地図に表示し、訪れた場所をたどれます。</span></p></div>
+      <div class="card"><div class="emoji">🔐</div><h3>App 鎖</h3><p>PIN 加生物辨識（Face ID／Touch ID）鎖住整個 App，忘記 PIN 可用裝置密碼救援。<span class="en">Lock the whole app with a PIN plus Face ID / Touch ID; recover with your device passcode.</span><span class="ja">PIN と生体認証（Face ID／Touch ID）でアプリ全体をロック。PIN を忘れても端末のパスコードで復旧できます。</span></p></div>
+      <div class="card"><div class="emoji">🕰️</div><h3>那年今天</h3><p>翻出同月同日的過往日記，重溫每一段回憶。<span class="en">Revisit entries from this day in past years.</span><span class="ja">過去の同じ日の日記を呼び出して振り返れます。</span></p></div>
+      <div class="card"><div class="emoji">⬇️</div><h3>匯入與匯出<span class="pill">Pro</span></h3><p>把日記連同照片匯出帶著走，或從其他 App 匯入。你的資料始終屬於你。<span class="en">Export your journal with photos, or import from other apps — your data is always yours.</span><span class="ja">写真ごと日記を書き出したり、他アプリから読み込んだり。データは常にあなたのものです。</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="changelog">
+  <div class="wrap">
+    <h2>版本更新 / What’s New / 更新履歴</h2>
+    <!-- 上架後請依實際版本與日期更新此區塊 -->
+    <div class="vers">
+      <div class="ver">
+        <div class="vhead"><span class="vnum">v1.0.0</span><span class="vdate">2026</span></div>
+        <p>首次發布——一日一篇＋月曆、照片／影片／錄音、心情與標籤、全文搜尋、三平台 iCloud 同步、地點與天氣、行事曆快照、統計、回憶地圖、7 套主題與深色模式、App 鎖、那年今天、匯入匯出。<span class="en">First release — one entry a day with a calendar, photos/video/audio, moods and tags, full-text search, three-platform iCloud sync, location &amp; weather, calendar snapshots, stats, a memory map, seven themes with dark mode, app lock, On This Day, and import/export.</span><span class="ja">初回リリース——1日1ページ＋カレンダー、写真／動画／録音、気分とタグ、全文検索、3プラットフォーム iCloud 同期、位置情報と天気、カレンダーのスナップショット、統計、思い出マップ、7テーマとダークモード、アプリロック、今日という日、インポート／エクスポート。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>核心書寫與三平台 iCloud 同步永遠免費；Inkday Pro 採訂閱或買斷（一次購買永久解鎖）<br>Core writing and iCloud sync are free forever · Inkday Pro via subscription or one-time purchase<br>コアの記録と iCloud 同期はずっと無料・Inkday Pro はサブスクまたは買い切り</p>
+    <p>
+      <a href="privacy-policy.html">隱私政策 Privacy</a>·
+      <a href="support.html">支援 Support</a>·
+      <a href="mailto:kimiyin@gmail.com">kimiyin@gmail.com</a>
+    </p>
+    <p>© 2026 Inkday</p>
+  </div>
+</footer>
+
+</body>
+</html>

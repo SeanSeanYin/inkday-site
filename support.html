@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkday · インクデイ — 支援 Support サポート</title>
+<style>
+  :root{
+    --bg:#F3F1EA; --card:#FCFBF6; --border:#E3DFD2;
+    --deep:#1E2A3A; --accent:#2F5A8C; --muted:#83806F;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14181E; --card:#1B212A; --border:#2B333F;
+           --deep:#E7ECF3; --accent:#7FA8D6; --muted:#93A0B2; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:32px 20px 72px;background:var(--bg);color:var(--deep);
+       font-family:-apple-system,"PingFang TC","Hiragino Sans","Noto Sans TC",system-ui,sans-serif;
+       line-height:1.7;-webkit-font-smoothing:antialiased}
+  main{max-width:720px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:4px}
+  .drop{width:34px;height:34px;border-radius:10px;background:var(--accent);position:relative;flex:none}
+  .drop::after{content:"";position:absolute;left:50%;top:46%;width:9px;height:9px;background:var(--bg);
+               border-radius:0 50% 50% 50%;transform:translate(-50%,-50%) rotate(45deg)}
+  h1{font-size:1.5rem;margin:0}
+  .lead{color:var(--muted);font-size:.9rem;margin:6px 0 24px}
+  nav{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+  nav a{text-decoration:none;font-size:.85rem;color:var(--accent);
+        border:1px solid var(--border);padding:4px 12px;border-radius:999px}
+  section{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 24px;margin-bottom:20px}
+  .lang-label{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  h2{font-size:1.1rem;margin:18px 0 6px}
+  h2:first-of-type{margin-top:4px}
+  a{color:var(--accent)}
+  ul{padding-left:20px;margin:8px 0}
+  li{margin:5px 0}
+  footer{text-align:center;color:var(--muted);font-size:.8rem;margin-top:36px}
+  footer a{color:var(--accent);margin:0 8px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <div class="drop" aria-hidden="true"></div>
+    <h1>Inkday</h1>
+  </div>
+  <p class="lead">支援 · Support · サポート — 私人日記 App</p>
+
+  <nav>
+    <a href="#zh">繁體中文</a>
+    <a href="#en">English</a>
+    <a href="#ja">日本語</a>
+    <a href="landing.html">首頁 Home</a>
+    <a href="privacy-policy.html">隱私 Privacy</a>
+  </nav>
+
+  <section id="zh">
+    <span class="lang-label">繁體中文</span>
+    <h2>需要協助？</h2>
+    <p>任何問題、建議或錯誤回報，請來信：<a href="mailto:kimiyin@gmail.com">kimiyin@gmail.com</a>，我們會盡快回覆。</p>
+    <h2>常見問題</h2>
+    <ul>
+      <li><strong>資料會不見嗎？</strong>日記同步在你自己的 iCloud，換新機登入同一個 Apple ID 就會自動出現。</li>
+      <li><strong>要付費才能寫日記嗎？</strong>不用。核心書寫與 iPhone／iPad／Mac 三平台 iCloud 同步永遠免費。Inkday Pro 才解鎖多主題、天氣、行事曆快照、統計、地圖與匯出。</li>
+      <li><strong>Inkday 看得到我的日記嗎？</strong>看不到。我們沒有伺服器，你的內容只存在你自己的裝置與 iCloud。</li>
+      <li><strong>「更新當天行事曆」會重複嗎？</strong>不會。更新是重新同步——會清掉當天舊快照重抓，反映行事曆最新的修改與刪除。</li>
+      <li><strong>如何恢復購買？</strong>設定 → Inkday Pro → 恢復購買。</li>
+      <li><strong>怎麼把日記帶走？</strong>設定 → 匯出，可連同照片匯出成檔案，或匯入到新裝置。</li>
+    </ul>
+  </section>
+
+  <section id="en">
+    <span class="lang-label">English</span>
+    <h2>Need help?</h2>
+    <p>For questions, feedback, or bug reports, email <a href="mailto:kimiyin@gmail.com">kimiyin@gmail.com</a>. We’ll get back to you as soon as we can.</p>
+    <h2>FAQ</h2>
+    <ul>
+      <li><strong>Will I lose my data?</strong> Your journal syncs in your own iCloud — sign in with the same Apple ID on a new device and it appears automatically.</li>
+      <li><strong>Do I have to pay to journal?</strong> No. Core writing and iCloud sync across iPhone, iPad, and Mac are free forever. Inkday Pro unlocks extra themes, weather, calendar snapshots, stats, the map, and export.</li>
+      <li><strong>Can Inkday see my entries?</strong> No. We run no servers; your content stays only on your devices and in your iCloud.</li>
+      <li><strong>Does “Refresh that day’s events” create duplicates?</strong> No. Refresh re-syncs — it clears the day’s old snapshot and re-imports, reflecting the latest calendar edits and deletions.</li>
+      <li><strong>How do I restore a purchase?</strong> Settings → Inkday Pro → Restore Purchases.</li>
+      <li><strong>How do I take my journal with me?</strong> Settings → Export to save a file (with photos), or import it on a new device.</li>
+    </ul>
+  </section>
+
+  <section id="ja">
+    <span class="lang-label">日本語</span>
+    <h2>お困りですか？</h2>
+    <p>ご質問・ご要望・不具合のご報告は <a href="mailto:kimiyin@gmail.com">kimiyin@gmail.com</a> までメールください。できるだけ早く返信します。</p>
+    <h2>よくある質問</h2>
+    <ul>
+      <li><strong>データは消えますか？</strong> 日記はご自身の iCloud に同期されます。新しい端末で同じ Apple ID にサインインすれば自動的に表示されます。</li>
+      <li><strong>日記を書くのに課金は必要？</strong> いいえ。コアの記録と iPhone／iPad／Mac の iCloud 同期はずっと無料です。Inkday Pro はテーマ追加・天気・カレンダーのスナップショット・統計・マップ・書き出しを解除します。</li>
+      <li><strong>Inkday は日記を見られますか？</strong> いいえ。サーバーを持たず、内容はあなたの端末と iCloud にのみ保存されます。</li>
+      <li><strong>「その日の予定を更新」で重複しますか？</strong> しません。更新は再同期です——その日の古いスナップショットを消して取り込み直し、カレンダーの最新の変更・削除を反映します。</li>
+      <li><strong>購入の復元は？</strong> 設定 → Inkday Pro → 購入を復元。</li>
+      <li><strong>日記を持ち出すには？</strong> 設定 → 書き出しで、写真ごとファイルに保存したり、新しい端末に読み込めます。</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="landing.html">首頁 Home</a>·
+    <a href="privacy-policy.html">隱私政策 Privacy</a>·
+    <a href="mailto:kimiyin@gmail.com">kimiyin@gmail.com</a>
+    <p>© 2026 Inkday</p>
+  </footer>
+</main>
+</body>
+</html>
