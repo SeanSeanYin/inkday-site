@@ -44,7 +44,6 @@
                 text-transform:uppercase; color: var(--muted); margin-bottom: 4px; }
   hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
   footer { text-align: center; color: var(--muted); font-size: .8rem; margin-top: 40px; }
-  footer a { color: var(--accent); margin: 0 8px; }
 </style>
 </head>
 <body>
@@ -53,14 +52,12 @@
     <div class="drop" aria-hidden="true"></div>
     <h1>Inkday</h1>
   </div>
-  <p class="updated">隱私權政策 · Privacy Policy · プライバシーポリシー — 生效日 Effective 2026-08-18</p>
+  <p class="updated">隱私權政策 · Privacy Policy · プライバシーポリシー — 生效日 Effective 2026-09-22</p>
 
   <nav>
     <a href="#zh">繁體中文</a>
     <a href="#en">English</a>
     <a href="#ja">日本語</a>
-    <a href="landing.html">首頁 Home</a>
-    <a href="support.html">支援 Support</a>
   </nav>
 
   <!-- ==================== 繁體中文 ==================== -->
@@ -78,10 +75,13 @@
     <h3>行事曆（選用）</h3>
     <p>只有在你主動開啟「新增日記時記錄當天行事曆」時，Inkday 才會在你新增日記當下讀取當天的行事曆行程，把它存成該篇日記內的文字快照，方便你日後即使換了行事曆或換手機仍能回看當天的安排。你可以在設定中選擇要記錄哪些行事曆。Inkday <strong>只會讀取、不會修改</strong>你的行事曆；這些快照一樣只存在你的 iCloud，不會上傳到任何其他地方。你可以隨時在設定中關閉，關閉不會刪除既有資料。</p>
 
+    <h3>使用分析（匿名）</h3>
+    <p>為了了解 Inkday 在哪些裝置與系統版本上被使用、找出並修復當機，據以改善穩定度與使用體驗，我們透過 Google Firebase（Analytics 與 Crashlytics）收集<strong>匿名的統計與當機資料</strong>，主要是<strong>裝置機型、作業系統版本、App 版本、概略的使用情形，以及當機報告</strong>。這些資料<strong>不包含、也無法連結到你的日記內容</strong>——你的文字、照片、錄音、心情、標籤、地點、天氣與行事曆一律不會傳出。我們<strong>不投放廣告、不使用 IDFA、不進行跨 App 追蹤</strong>，也不會用這些資料辨識你個人的身分。</p>
+
     <h3>我們不做的事</h3>
     <ul>
       <li>不收集、不分析、不上傳你的日記內容。</li>
-      <li>沒有廣告、沒有第三方追蹤或分析 SDK。</li>
+      <li>沒有廣告，也沒有跨 App 追蹤（不使用 IDFA、不連結你的身分）。</li>
       <li>不建立帳號、不要求你的個人資料。</li>
     </ul>
 
@@ -113,10 +113,13 @@
     <h3>Calendar (optional)</h3>
     <p>Only when you turn on "record that day's events in new entries" does Inkday read that day's calendar events at the moment you create an entry, saving them as a text snapshot inside that entry so you can look back on your plans even after switching calendars or phones. You can choose which calendars to include in Settings. Inkday <strong>only reads and never modifies</strong> your calendar; these snapshots are likewise stored only in your iCloud and are never uploaded anywhere else. You can turn this off at any time in Settings; doing so does not delete existing data.</p>
 
+    <h3>Usage analytics (anonymous)</h3>
+    <p>To understand which devices and OS versions Inkday runs on, to find and fix crashes, and to improve stability and the overall experience, we use Google Firebase (Analytics and Crashlytics) to collect <strong>anonymous, aggregate data</strong>—mainly your <strong>device model, operating system version, app version, general usage, and crash reports</strong>. This data <strong>does not include and cannot be linked to your journal content</strong>: your text, photos, audio, moods, tags, location, weather, and calendar are never sent. We run <strong>no ads, use no IDFA, and do no cross-app tracking</strong>, and we do not use this data to identify you personally.</p>
+
     <h3>What we don't do</h3>
     <ul>
       <li>We do not collect, analyze, or upload your journal content.</li>
-      <li>No ads, no third-party tracking or analytics SDKs.</li>
+      <li>No ads and no cross-app tracking (no IDFA, not linked to your identity).</li>
       <li>No account creation and no request for your personal information.</li>
     </ul>
 
@@ -148,10 +151,13 @@
     <h3>カレンダー（任意）</h3>
     <p>「新しい日記にその日の予定を記録」をオンにした場合のみ、日記を作成した時点でその日のカレンダーの予定を読み取り、その日記内にテキストのスナップショットとして保存します。カレンダーや端末を変えても、その日の予定を振り返ることができます。記録するカレンダーは設定で選べます。Inkday はカレンダーを<strong>読み取るだけで変更せず</strong>、これらのスナップショットも同様にあなたの iCloud にのみ保存され、他の場所へアップロードされることはありません。設定でいつでもオフにでき、オフにしても既存のデータは削除されません。</p>
 
+    <h3>利用状況の分析（匿名）</h3>
+    <p>Inkday がどのデバイスや OS バージョンで使われているかを把握し、クラッシュを見つけて修正し、安定性と体験を改善するため、Google Firebase（Analytics と Crashlytics）を用いて<strong>匿名の統計・クラッシュデータ</strong>を収集します。主に<strong>デバイスの機種、OS バージョン、アプリのバージョン、おおまかな利用状況、およびクラッシュレポート</strong>です。このデータには<strong>あなたの日記の内容は一切含まれず、結び付けることもできません</strong>——文章、写真、音声、気分、タグ、位置情報、天気、カレンダーが送信されることはありません。<strong>広告は表示せず、IDFA も使わず、アプリをまたぐトラッキングも行いません</strong>。このデータであなた個人を特定することもありません。</p>
+
     <h3>行わないこと</h3>
     <ul>
       <li>日記の内容を収集・分析・アップロードすることはありません。</li>
-      <li>広告、第三者のトラッキングや分析 SDK はありません。</li>
+      <li>広告や、アプリをまたぐトラッキングはありません（IDFA 不使用、本人と結び付けません）。</li>
       <li>アカウント作成や個人情報の要求はありません。</li>
     </ul>
 
@@ -168,12 +174,7 @@
     <p>プライバシーに関するご質問は <a class="mail" href="mailto:kimiyin@gmail.com">kimiyin@gmail.com</a> までご連絡ください。</p>
   </section>
 
-  <footer>
-    <a href="landing.html">首頁 Home</a>·
-    <a href="support.html">支援 Support</a>·
-    <a href="mailto:kimiyin@gmail.com">kimiyin@gmail.com</a>
-    <p>© 2026 Inkday</p>
-  </footer>
+  <footer>© 2026 Inkday</footer>
 </main>
 </body>
 </html>
