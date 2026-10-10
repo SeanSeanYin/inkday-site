@@ -67,7 +67,7 @@
     <p>Inkday 是一款私人日記 App。我們的核心原則很簡單：<strong>你的日記是你的</strong>。我們沒有伺服器，也看不到你的內容。</p>
 
     <h3>資料存在哪裡</h3>
-    <p>你的日記內容、照片、心情、標籤、地點、天氣、行事曆與運動紀錄，全部只儲存在<strong>你自己的裝置與你自己的 iCloud（Apple 私有資料庫）</strong>中，透過你的 Apple ID 在你的裝置間同步。開發者<strong>沒有任何伺服器</strong>，也<strong>無法存取</strong>這些資料。</p>
+    <p>你的日記內容、照片、心情、標籤、地點、天氣與行事曆，全部只儲存在<strong>你自己的裝置與你自己的 iCloud（Apple 私有資料庫）</strong>中，透過你的 Apple ID 在你的裝置間同步。開發者<strong>沒有任何伺服器</strong>，也<strong>無法存取</strong>這些資料。運動紀錄是例外，請見下方「健康與運動資料」說明。</p>
 
     <h3>地點與天氣（選用）</h3>
     <p>只有在你主動開啟「自動記錄地點與天氣」時，Inkday 才會在你新增日記當下取得裝置位置，用來標記該篇日記。為了顯示天氣，會透過 Apple 的 WeatherKit 服務以你的位置查詢當下天氣，此查詢依 Apple 的條款進行。地點與天氣結果一樣只存在你的 iCloud，不會上傳到任何其他地方。你可以隨時在設定中關閉，關閉不會刪除既有資料。</p>
@@ -76,7 +76,7 @@
     <p>只有在你主動開啟「新增日記時記錄當天行事曆」時，Inkday 才會在你新增日記當下讀取當天的行事曆行程，把它存成該篇日記內的文字快照，方便你日後即使換了行事曆或換手機仍能回看當天的安排。你可以在設定中選擇要記錄哪些行事曆。Inkday <strong>只會讀取、不會修改</strong>你的行事曆；這些快照一樣只存在你的 iCloud，不會上傳到任何其他地方。你可以隨時在設定中關閉，關閉不會刪除既有資料。</p>
 
     <h3>健康與運動資料（選用，僅 iPhone／iPad）</h3>
-    <p>只有在你允許 Inkday 讀取「健康」資料後，Inkday 才會在你新增日記時（可在設定關閉），或你按下「抓取今天的運動」時，讀取<strong>當天的活動能量</strong>；若你已解鎖 Inkday Pro，還會讀取<strong>步數、運動分鐘與運動紀錄</strong>（運動類型、時長、距離、配速、心率、爬樓層數等），把它存成該篇日記內的快照。Inkday <strong>只讀取、不會寫入或更改</strong>你的健康資料；這些快照只存在你的 iCloud，隨日記同步到你的其他裝置，<strong>不會上傳到其他地方、不與第三方共享，也不會用於廣告、行銷或資料探勘</strong>，更不會傳給 Firebase。你可以隨時在 iOS「設定 &gt; 隱私權與安全性 &gt; 健康」撤銷授權，或在 Inkday 設定中關閉自動記錄；關閉不會刪除既有資料。</p>
+    <p>只有在你允許 Inkday 讀取「健康」資料後，Inkday 才會在你新增日記時（可在設定關閉），或你按下「抓取今天的運動」時，讀取<strong>當天的活動能量</strong>；若你已解鎖 Inkday Pro，還會讀取<strong>步數、運動分鐘與運動紀錄</strong>（運動類型、時長、距離、配速、心率、爬樓層數等），把它存成該篇日記內的快照。Inkday <strong>只讀取、不會寫入或更改</strong>你的健康資料；<strong>這些快照只存在你抓取當下所使用的那台裝置上，不會透過 iCloud 同步到你的其他裝置</strong>（這點跟上面其他日記資料不同）——如果你想在多台裝置上都看到運動紀錄，需要在每台裝置上各自抓取一次。這些資料一樣<strong>不會上傳到其他地方、不與第三方共享，也不會用於廣告、行銷或資料探勘</strong>，更不會傳給 Firebase。你可以隨時在 iOS「設定 &gt; 隱私權與安全性 &gt; 健康」撤銷授權，或在 Inkday 設定中關閉自動記錄；關閉不會刪除既有資料。</p>
 
     <h3>使用分析（匿名）</h3>
     <p>為了了解 Inkday 在哪些裝置與系統版本上被使用、找出並修復當機，據以改善穩定度與使用體驗，我們透過 Google Firebase（Analytics 與 Crashlytics）收集<strong>匿名的統計與當機資料</strong>，主要是<strong>裝置機型、作業系統版本、App 版本、概略的使用情形，以及當機報告</strong>。這些資料<strong>不包含、也無法連結到你的日記內容</strong>——你的文字、照片、錄音、心情、標籤、地點、天氣與行事曆一律不會傳出。我們<strong>不投放廣告、不使用 IDFA、不進行跨 App 追蹤</strong>，也不會用這些資料辨識你個人的身分。</p>
@@ -108,7 +108,7 @@
     <p>Inkday is a private journaling app. Our core principle is simple: <strong>your journal is yours</strong>. We run no servers and cannot see your content.</p>
 
     <h3>Where your data lives</h3>
-    <p>Your entries, photos, moods, tags, and any location, weather, calendar, or activity records are stored only on <strong>your own devices and your own iCloud (Apple's private database)</strong>, syncing across your devices via your Apple ID. The developer operates <strong>no servers</strong> and <strong>cannot access</strong> this data.</p>
+    <p>Your entries, photos, moods, tags, and any location, weather, or calendar records are stored only on <strong>your own devices and your own iCloud (Apple's private database)</strong>, syncing across your devices via your Apple ID. The developer operates <strong>no servers</strong> and <strong>cannot access</strong> this data. Activity records are the exception — see "Health & activity data" below.</p>
 
     <h3>Location &amp; weather (optional)</h3>
     <p>Only when you turn on "automatically record location and weather" does Inkday read your device location at the moment you create an entry, to tag that entry. To show weather, your location is used to query Apple's WeatherKit service under Apple's terms. The resulting location and weather are likewise stored only in your iCloud and are never uploaded anywhere else. You can turn this off at any time in Settings; doing so does not delete existing data.</p>
@@ -117,7 +117,7 @@
     <p>Only when you turn on "record that day's events in new entries" does Inkday read that day's calendar events at the moment you create an entry, saving them as a text snapshot inside that entry so you can look back on your plans even after switching calendars or phones. You can choose which calendars to include in Settings. Inkday <strong>only reads and never modifies</strong> your calendar; these snapshots are likewise stored only in your iCloud and are never uploaded anywhere else. You can turn this off at any time in Settings; doing so does not delete existing data.</p>
 
     <h3>Health &amp; activity data (optional, iPhone/iPad only)</h3>
-    <p>Only after you allow Inkday to read your Health data does Inkday read <strong>that day's active energy</strong> when you create an entry (this can be turned off in Settings) or tap "Capture today's activity"; if you have unlocked Inkday Pro, it also reads <strong>steps, exercise minutes, and workouts</strong> (workout type, duration, distance, pace, heart rate, flights climbed, and so on), and saves them as a snapshot inside that entry. Inkday <strong>only reads and never writes or changes</strong> your Health data. These snapshots are stored only in your iCloud and sync with the entry to your other devices; they are <strong>never uploaded anywhere else, never shared with third parties, never used for advertising, marketing, or data mining</strong>, and never sent to Firebase. You can revoke access anytime in iOS Settings &gt; Privacy &amp; Security &gt; Health, or turn off automatic capture in Inkday's Settings; doing so does not delete existing data.</p>
+    <p>Only after you allow Inkday to read your Health data does Inkday read <strong>that day's active energy</strong> when you create an entry (this can be turned off in Settings) or tap "Capture today's activity"; if you have unlocked Inkday Pro, it also reads <strong>steps, exercise minutes, and workouts</strong> (workout type, duration, distance, pace, heart rate, flights climbed, and so on), and saves them as a snapshot inside that entry. Inkday <strong>only reads and never writes or changes</strong> your Health data. <strong>These snapshots stay only on the device where you captured them and do not sync to your other devices through iCloud</strong> (unlike the other journal data above) — to see your activity on multiple devices, you'll need to capture it separately on each one. This data is likewise <strong>never uploaded anywhere else, never shared with third parties, never used for advertising, marketing, or data mining</strong>, and never sent to Firebase. You can revoke access anytime in iOS Settings &gt; Privacy &amp; Security &gt; Health, or turn off automatic capture in Inkday's Settings; doing so does not delete existing data.</p>
 
     <h3>Usage analytics (anonymous)</h3>
     <p>To understand which devices and OS versions Inkday runs on, to find and fix crashes, and to improve stability and the overall experience, we use Google Firebase (Analytics and Crashlytics) to collect <strong>anonymous, aggregate data</strong>—mainly your <strong>device model, operating system version, app version, general usage, and crash reports</strong>. This data <strong>does not include and cannot be linked to your journal content</strong>: your text, photos, audio, moods, tags, location, weather, and calendar are never sent. We run <strong>no ads, use no IDFA, and do no cross-app tracking</strong>, and we do not use this data to identify you personally.</p>
@@ -149,7 +149,7 @@
     <p>Inkday はプライベートな日記アプリです。基本方針はシンプルで、<strong>あなたの日記はあなたのもの</strong>です。私たちはサーバーを持たず、あなたの内容を見ることはできません。</p>
 
     <h3>データの保存場所</h3>
-    <p>日記の内容、写真、気分、タグ、位置情報・天気・カレンダー・運動の記録は、すべて<strong>あなた自身のデバイスとあなた自身の iCloud（Apple のプライベートデータベース）</strong>にのみ保存され、あなたの Apple ID を通じて各デバイス間で同期されます。開発者は<strong>サーバーを一切持たず</strong>、これらのデータに<strong>アクセスできません</strong>。</p>
+    <p>日記の内容、写真、気分、タグ、位置情報・天気・カレンダーの記録は、すべて<strong>あなた自身のデバイスとあなた自身の iCloud（Apple のプライベートデータベース）</strong>にのみ保存され、あなたの Apple ID を通じて各デバイス間で同期されます。開発者は<strong>サーバーを一切持たず</strong>、これらのデータに<strong>アクセスできません</strong>。運動の記録はこの例外にあたります。詳しくは下記「ヘルスケアと運動データ」をご覧ください。</p>
 
     <h3>位置情報と天気（任意）</h3>
     <p>「位置情報と天気を自動記録」をオンにした場合のみ、日記を作成した時点でデバイスの位置情報を取得し、その日記に記録します。天気の表示には、あなたの位置情報を用いて Apple の WeatherKit サービスに問い合わせます（Apple の規約に基づく）。取得した位置情報と天気も同様にあなたの iCloud にのみ保存され、他の場所へアップロードされることはありません。設定でいつでもオフにでき、オフにしても既存のデータは削除されません。</p>
@@ -158,7 +158,7 @@
     <p>「新しい日記にその日の予定を記録」をオンにした場合のみ、日記を作成した時点でその日のカレンダーの予定を読み取り、その日記内にテキストのスナップショットとして保存します。カレンダーや端末を変えても、その日の予定を振り返ることができます。記録するカレンダーは設定で選べます。Inkday はカレンダーを<strong>読み取るだけで変更せず</strong>、これらのスナップショットも同様にあなたの iCloud にのみ保存され、他の場所へアップロードされることはありません。設定でいつでもオフにでき、オフにしても既存のデータは削除されません。</p>
 
     <h3>ヘルスケアと運動データ（任意・iPhone／iPad のみ）</h3>
-    <p>Inkday が「ヘルスケア」のデータを読み取ることをあなたが許可した場合に限り、日記を作成するとき（設定でオフにできます）または「今日の運動を取得」をタップしたときに、<strong>その日のアクティビティエネルギー</strong>を読み取ります。Inkday Pro をご利用の場合は、<strong>歩数・運動時間・ワークアウト記録</strong>（種類・時間・距離・ペース・心拍数・上った階数など）も読み取り、その日記内のスナップショットとして保存します。Inkday はヘルスケアのデータを<strong>読み取るだけで、書き込みや変更は行いません</strong>。このスナップショットはあなたの iCloud にのみ保存され、日記と一緒に他のデバイスへ同期されます。<strong>他の場所へ送信されることも、第三者と共有されることも、広告・マーケティング・データマイニングに使われることもなく</strong>、Firebase にも送られません。iOS の「設定 &gt; プライバシーとセキュリティ &gt; ヘルスケア」でいつでも許可を取り消せ、Inkday の設定で自動記録をオフにすることもできます（既存のデータは削除されません）。</p>
+    <p>Inkday が「ヘルスケア」のデータを読み取ることをあなたが許可した場合に限り、日記を作成するとき（設定でオフにできます）または「今日の運動を取得」をタップしたときに、<strong>その日のアクティビティエネルギー</strong>を読み取ります。Inkday Pro をご利用の場合は、<strong>歩数・運動時間・ワークアウト記録</strong>（種類・時間・距離・ペース・心拍数・上った階数など）も読み取り、その日記内のスナップショットとして保存します。Inkday はヘルスケアのデータを<strong>読み取るだけで、書き込みや変更は行いません</strong>。<strong>このスナップショットは取得したその端末だけに保存され、上記の他の日記データとは異なり iCloud を通じてほかのデバイスに同期されません</strong>。複数の端末で運動データを見たい場合は、それぞれの端末で個別に取得する必要があります。このデータも同様に<strong>他の場所へ送信されることも、第三者と共有されることも、広告・マーケティング・データマイニングに使われることもなく</strong>、Firebase にも送られません。iOS の「設定 &gt; プライバシーとセキュリティ &gt; ヘルスケア」でいつでも許可を取り消せ、Inkday の設定で自動記録をオフにすることもできます（既存のデータは削除されません）。</p>
 
     <h3>利用状況の分析（匿名）</h3>
     <p>Inkday がどのデバイスや OS バージョンで使われているかを把握し、クラッシュを見つけて修正し、安定性と体験を改善するため、Google Firebase（Analytics と Crashlytics）を用いて<strong>匿名の統計・クラッシュデータ</strong>を収集します。主に<strong>デバイスの機種、OS バージョン、アプリのバージョン、おおまかな利用状況、およびクラッシュレポート</strong>です。このデータには<strong>あなたの日記の内容は一切含まれず、結び付けることもできません</strong>——文章、写真、音声、気分、タグ、位置情報、天気、カレンダーが送信されることはありません。<strong>広告は表示せず、IDFA も使わず、アプリをまたぐトラッキングも行いません</strong>。このデータであなた個人を特定することもありません。</p>
